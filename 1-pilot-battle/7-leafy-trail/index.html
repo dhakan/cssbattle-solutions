@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7 Leafy Trail</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <style>
+      body {
+        background: #0b2429;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      .lemon {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 100px 0;
+      }
+
+      .lemon:nth-child(1) {
+        background: #1a4341;
+        transform: translateX(-50px);
+      }
+
+      .lemon:nth-child(2) {
+        background: #998235;
+      }
+
+      .lemon:nth-child(3) {
+        background: #f3ac3c;
+        transform: translateX(50px);
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="container css-battle-canvas flex">
+      <div class="lemon"></div>
+      <div class="lemon"></div>
+      <div class="lemon"></div>
+    </div>
+  </body>
+</html>

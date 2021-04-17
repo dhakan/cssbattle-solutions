@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6 Missing Slice</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <style>
+      body {
+        background: #e3516e;
+      }
+
+      .circle {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+      }
+
+      .box {
+        flex-basis: 50%;
+      }
+
+      .box.green {
+        background: #51b5a9;
+      }
+
+      .box.yellow {
+        background: #fade8b;
+      }
+
+      .box.white {
+        background: #f7f3d7;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="css-battle-canvas flex">
+      <div class="circle">
+        <div class="box green"></div>
+        <div class="box yellow"></div>
+        <div class="box white"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 Acid Rain</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <style>
+      body {
+        margin: 0;
+        background: #0b2429;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .circle {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+      }
+
+      .circle,
+      .circle::after {
+        background: #f3ac3c;
+      }
+
+      .green,
+      .green::after {
+        background: #998235;
+      }
+
+      .circle.pointy::after {
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+      }
+
+      .circle:not(.pointy) {
+        transform: translate(60px, -60px);
+      }
+
+      .circle.pointy:not(.green) {
+        transform: translate(-60px, 60px);
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="css-battle-canvas flex">
+      <div class="circle"></div>
+      <div class="circle green pointy"></div>
+      <div class="circle pointy"></div>
+    </div>
+  </body>
+</html>

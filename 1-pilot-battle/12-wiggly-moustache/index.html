@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 - Wiggly Moustache</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <style>
+      body {
+        background: #f5d6b4;
+      }
+
+      .half-circle {
+        border: 10px solid transparent;
+        border-left-color: #d86f45;
+        border-top-color: #d86f45;
+        border-width: 50px;
+        border-radius: 50%;
+        transform: rotate(-135deg);
+      }
+
+      .half-circle.middle {
+        transform: rotate(45deg);
+        margin: 0 -20px -1px -20px;
+      }
+
+      .half-circle:not(.middle)::before {
+        content: "";
+        background: #d86f45;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .half-circle.left::before {
+        left: 18.5px;
+        bottom: 18px;
+      }
+
+      .half-circle.right::before {
+        right: 18.5px;
+        top: 18px;
+      }
+
+      .half-circle::after {
+        content: "";
+        background: #f5d6b4;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: -30px;
+        left: -30px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="container css-battle-canvas flex">
+      <div class="half-circle left"></div>
+      <div class="half-circle middle"></div>
+      <div class="half-circle right"></div>
+    </div>
+  </body>
+</html>

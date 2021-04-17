@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 Ups n Downs</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <style>
+      body {
+        background: #62306d;
+      }
+
+      .container {
+        flex-wrap: wrap;
+      }
+
+      .rect {
+        width: 100px;
+        height: 100px;
+      }
+
+      .rect {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+
+      .rect:nth-child(even) {
+        background: #f7ec7d;
+      }
+
+      .rect:nth-child(odd) {
+        background: #62306d;
+      }
+
+      .rect.bottom {
+        transform: rotate(0.5turn);
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="css-battle-canvas flex">
+      <div class="container flex">
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect bottom"></div>
+        <div class="rect bottom"></div>
+        <div class="rect bottom"></div>
+      </div>
+    </div>
+  </body>
+</html>

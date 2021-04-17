@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8 Forking Crazy</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <style>
+      body {
+        background: #6592cf;
+      }
+
+      .container {
+        align-items: flex-end;
+      }
+
+      .fork {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .fork .top {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .fork .top .pin {
+        height: 100px;
+        width: 20px;
+        background: #060f55;
+        border-top-left-radius: 70px;
+        border-top-right-radius: 70px;
+        position: relative;
+      }
+
+      .fork .top .pin::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: #6592cf;
+        position: absolute;
+        bottom: -10px;
+        left: -20px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      .fork .middle {
+        width: 140px;
+        height: 100px;
+        background: #060f55;
+        position: relative;
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px;
+      }
+
+      .fork .bottom {
+        width: 20px;
+        height: 51px;
+        background: #060f55;
+        margin-top: -1px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="container css-battle-canvas flex">
+      <div class="fork">
+        <div class="top">
+          <div class="pin"></div>
+          <div class="pin"></div>
+          <div class="pin"></div>
+          <div class="pin"></div>
+        </div>
+        <div class="middle"></div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+  </body>
+</html>

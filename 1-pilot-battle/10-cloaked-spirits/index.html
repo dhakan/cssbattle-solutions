@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 Cloaked Spirits</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <style>
+      body {
+        background: #62306d;
+        align-items: flex-end;
+      }
+
+      .container {
+        align-items: flex-end;
+      }
+
+      .column {
+        background: #f7ec7d;
+        height: 200px;
+      }
+
+      .column.left {
+        height: 100px;
+      }
+
+      .column.right {
+        height: 100px;
+      }
+
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        transform: translateY(-50%);
+      }
+
+      .circle {
+        border: 20px solid #e38f66;
+        background: #aa445f;
+      }
+
+      .column.left .circle,
+      .column.right .circle {
+        border: 20px solid #aa445f;
+        background: #e38f66;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="container css-battle-canvas flex">
+      <div class="column left">
+        <div class="circle"></div>
+      </div>
+      <div class="column">
+        <div class="circle"></div>
+      </div>
+      <div class="column right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3 Push Button</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <style>
+      body {
+        background: #6592cf;
+      }
+
+      .container {
+        padding: 0 50px;
+      }
+
+      .inner-container {
+        background: #243d83;
+        height: 150px;
+        width: 100%;
+      }
+
+      .circle {
+        border-radius: 50%;
+      }
+
+      .circle.blue {
+        background: #6592cf;
+        width: 250px;
+        height: 250px;
+      }
+
+      .circle.dark-blue {
+        background: #243d83;
+        width: 150px;
+        height: 150px;
+      }
+
+      .circle.yellow {
+        background: #eeb850;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="container css-battle-canvas flex">
+      <div class="inner-container flex">
+        <div class="circle blue flex">
+          <div class="circle dark-blue flex">
+            <div class="circle yellow flex"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

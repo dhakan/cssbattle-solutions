@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9 Tesseract</title>
+    <link rel="stylesheet" href="../../common.css" />
+    <style>
+      body {
+        background: #222730;
+      }
+
+      .container {
+        overflow: hidden;
+      }
+
+      .outer {
+        height: 150px;
+        width: 100%;
+        background: #4caab3;
+      }
+
+      .rotated {
+        background: #222730;
+        transform: rotate(-45deg);
+        width: 250px;
+        height: 250px;
+      }
+
+      .square {
+        background: #4caab3;
+        width: 150px;
+        height: 150px;
+      }
+
+      .circle {
+        width: 50px;
+        height: 50px;
+        background: #393e46;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="container css-battle-canvas flex">
+      <div class="outer flex">
+        <div class="rotated flex">
+          <div class="square flex">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
