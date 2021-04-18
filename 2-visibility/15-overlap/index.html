@@ -1,0 +1,50 @@
+<!-- Copy this template to start new exercise with reasonable defaults -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15 Overlap</title>
+    <link rel="stylesheet" href="../../utils/reset.css" />
+    <link rel="stylesheet" href="../../utils/common.css" />
+    <style>
+      body {
+        background: #09042a;
+      }
+
+      .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #7b3f61;
+      }
+
+      .circle:not(.inner) {
+        margin: 0 -25px;
+      }
+
+      .circle:not(.inner):last-child {
+        background: #e78481;
+        overflow: hidden;
+      }
+
+      .circle.inner {
+        position: relative;
+        left: -100px;
+        background: #09042a;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="css-battle-canvas flex">
+      <div class="circle"></div>
+      <div class="circle">
+        <div class="circle inner"></div>
+      </div>
+    </div>
+  </body>
+</html>
