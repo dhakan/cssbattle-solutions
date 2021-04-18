@@ -1,0 +1,80 @@
+<!-- Copy this template to start new exercise with reasonable defaults -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14 Web Maker Logo</title>
+    <link rel="stylesheet" href="../../utils/common.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #f2f2b6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        height: 130px;
+        position: relative;
+        right: 10px;
+      }
+
+      .inner-container {
+        position: relative;
+        width: 150px;
+        margin: 0 -20px;
+      }
+
+      .triangle {
+        position: absolute;
+        background: #ff6d00;
+        width: 100%;
+        height: 100%;
+      }
+
+      .inner-container:first-child .triangle {
+        clip-path: polygon(50% 100%, 100% 0, 0 0);
+      }
+
+      .inner-container:last-child .triangle {
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+      }
+
+      .inner-container .triangle:first-child {
+        z-index: 1;
+      }
+
+      .inner-container .triangle:last-child {
+        left: 20px;
+      }
+
+      .inner-container:first-child .triangle:last-child,
+      .inner-container:last-child .triangle:first-child {
+        background: #fd4602;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="css-battle-canvas flex">
+      <div class="container">
+        <div class="inner-container">
+          <div class="triangle"></div>
+          <div class="triangle"></div>
+        </div>
+        <div class="inner-container">
+          <div class="triangle"></div>
+          <div class="triangle"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
