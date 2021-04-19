@@ -40,9 +40,28 @@ header::after {
   animation: roll 400ms forwards ease-in-out;
 }
 
+.repo-container {
+  justify-content: start;
+}
+
+.github-link {
+  margin-left: 0.5rem;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  transition: fill 150ms ease-in;
+}
+
+.github-link:hover .github-icon {
+  fill: #667eea;
+}
+
 h1 {
   font-size: 3.2rem;
   line-height: 1.2;
+  margin: 1rem 0;
 }
 
 ul {
@@ -50,9 +69,22 @@ ul {
   margin-top: 2rem;
 }
 
+p {
+  margin: 0.5rem 0;
+}
+
 a {
   text-decoration: none;
   color: #667eea;
+  display: inline-flex;
+}
+
+.link {
+  transition: filter 150ms ease-in;
+}
+
+.link:hover {
+  filter: brightness(60%);
 }
 
 li a {
@@ -76,7 +108,7 @@ li a:hover {
 }
 
 footer {
-  padding: 4rem 0;
+  margin-top: 3rem;
 }
 
 @keyframes roll {
