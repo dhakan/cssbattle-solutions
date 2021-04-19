@@ -1,0 +1,65 @@
+<!-- Copy this template to start new exercise with reasonable defaults -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>16 Eye of the Tiger</title>
+    <link rel="stylesheet" href="../../utils/reset.css" />
+    <link rel="stylesheet" href="../../utils/common.css" />
+    <style>
+      body {
+        background: #0b2429;
+      }
+
+      .container {
+        width: 200px;
+        height: 200px;
+        background: #998235;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        transform: rotate(45deg);
+        overflow: hidden;
+      }
+
+      .circle {
+        width: 200px;
+        height: 200px;
+        background: #998235;
+        border-radius: 100%;
+      }
+
+      .circle .circle {
+        width: 180px;
+        height: 180px;
+        background: #0b2429;
+      }
+
+      .circle .circle .circle {
+        width: 140px;
+        height: 140px;
+        background: #f3ac3c;
+      }
+
+      .circle .circle .circle .circle {
+        width: 50px;
+        height: 50px;
+        background: #0b2429;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="css-battle-canvas flex">
+      <div class="container">
+        <div class="circle flex">
+          <div class="circle flex">
+            <div class="circle flex">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
