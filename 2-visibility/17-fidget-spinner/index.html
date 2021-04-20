@@ -1,0 +1,71 @@
+<!-- Copy this template to start new exercise with reasonable defaults -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>17 Fidget Spinner</title>
+    <link rel="stylesheet" href="../../utils/reset.css" />
+    <link rel="stylesheet" href="../../utils/common.css" />
+    <style>
+      body {
+        background: #09042a;
+      }
+
+      .container {
+        position: relative;
+      }
+
+      .horizontal,
+      .vertical {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50px;
+      }
+
+      .horizontal {
+        width: 200px;
+        height: 50px;
+        background: #e78481;
+      }
+
+      .vertical {
+        height: 185px;
+        flex-direction: column;
+      }
+
+      .circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        border: 10px solid;
+      }
+
+      .horizontal .circle {
+        background: #09042a;
+        border-color: #e78481;
+      }
+
+      .vertical .circle {
+        background: #f5bb9c;
+        border-color: #09042a;
+        /* Not sure why this 0,5px on each side is needed */
+        margin: -0.5px 0;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="container css-battle-canvas">
+      <div class="horizontal absolute-center">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div class="vertical absolute-center">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+  </body>
+</html>
