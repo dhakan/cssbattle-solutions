@@ -1,0 +1,57 @@
+<!-- Copy this template to start new exercise with reasonable defaults -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18 Matrix</title>
+    <link rel="stylesheet" href="../../utils/reset.css" />
+    <link rel="stylesheet" href="../../utils/common.css" />
+    <style>
+      body {
+        background: #5c434c;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      .container > div {
+        overflow: hidden;
+      }
+
+      .container div::after {
+        content: "";
+        display: block;
+        width: 160px;
+        height: 160px;
+        background: #f09462;
+        border-radius: 100%;
+      }
+
+      .container .light::after {
+        background: #f5d6b4;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="container css-battle-canvas">
+      <div></div>
+      <div class="light"></div>
+      <div></div>
+      <div class="light"></div>
+      <div class="light"></div>
+      <div></div>
+      <div class="light"></div>
+      <div></div>
+      <div></div>
+      <div class="light"></div>
+      <div></div>
+      <div class="light"></div>
+    </div>
+  </body>
+</html>
